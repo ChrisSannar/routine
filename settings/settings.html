@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<style>
+body {
+  background: rgb(240, 240, 240);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap * {
+  margin-bottom: 1em;
+}
+
+</style>
+<body>
+  <div class="wrap">
+    <textarea name="pages" id="pages" cols="50" rows="10"></textarea>
+    <button id="saveButton">Save</button>
+    <button id="helpButton">Help</button>
+    <div id="help" style="display: none; padding: 0 1em;">
+      <p>This add on allows you to cycle through your news routine without having to keep changing the url.</p>
+      <p>The sites you like to visit should be listed above seperated each by a new line. </p>
+      <p>Press the 'Save' button once you have your list. Also be sure to include the whole link.</p>
+      <p>Use these navigation commands anytime to move the current tab on to the next page:</p>
+      <ul>
+        <li>'Alt+Shift+Right' - Next page</li>
+        <li>'Alt+Shift+Left' - Previous page</li>
+        <li>'Alt+Shift+Space' - Restart Routine to the first link</li>
+      </ul>
+      <p>Enjoy your routine!</p>
+    </div>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>

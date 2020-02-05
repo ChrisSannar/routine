@@ -1,0 +1,7 @@
+A browser application that takes you through your daily routine.
+  Goes to the next page on a list you set up.
+you can double click on the button or set a hotkey to move to the next page.
+
+√ Gonna want a 'reset' button
+
+√ Have the hotkey be 'Ctrl + Shift + Right/Left'

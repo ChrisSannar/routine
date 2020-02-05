@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Routine",
+  "version": "1.0",
+  "description": "An extension that cycles through your routine of webpages",
+  "background" : {
+    "scripts": ["index.js"]
+  },
+  "commands": {
+    "next_page" : {
+      "suggested_key": {
+        "default": "Alt+Shift+Right"
+      },
+      "description": "Moves to the next page in the routine"
+    },
+    "prev_page" : {
+      "suggested_key": {
+        "default": "Alt+Shift+Left"
+      },
+      "description": "Moves to the previous page in the routine"
+    },
+    "reset" : {
+      "suggested_key": {
+        "default": "Alt+Shift+Space"
+      },
+      "description": "Resets the routine"
+    },
+    "pause" : {
+      "suggested_key": {
+        "default": "Alt+Shift+Delete"
+      },
+      "description": "Pauses routine keys from working"
+    }
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-1.png",
+    "default_title": "Routine",
+    "default_popup": "settings/settings.html"
+  },
+  "permissions": ["storage"]
+}
